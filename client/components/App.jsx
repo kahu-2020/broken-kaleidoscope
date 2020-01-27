@@ -5,7 +5,84 @@ import Clump from './Clump'
 
 const App = () => {
   return (
-    <Clump />
+    <div>
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      <Clump />
+      
+      
+
+    </div>
+    
   )
 }
 
