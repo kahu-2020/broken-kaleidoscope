@@ -1,9 +1,11 @@
 import React from 'react'
+import Try from './Try'
 
 const App = () => {
   return (
-    <div>React development has begun!</div>
-  )
-}
+ 
+  <Try />
+   
+  )}
 
 export default App
