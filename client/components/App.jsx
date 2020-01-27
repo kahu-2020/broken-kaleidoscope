@@ -1,11 +1,76 @@
 import React from 'react'
-import Try from './Try'
+import Pixel from './Pixel'
 
 const App = () => {
   return (
- 
-  <Try />
-   
+ <div>
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+  <Pixel />
+</div>
   )}
 
 export default App
