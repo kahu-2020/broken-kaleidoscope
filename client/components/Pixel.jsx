@@ -20,6 +20,8 @@ class Pixel extends React.Component {
     }
     this.clickHandler = this.clickHandler.bind(this)
     this.onMouseEnter = this.onMouseEnter.bind(this)
+    this.rightClick = this.rightClick.bind(this)
+    this.onDoubleClick = this.onDoubleClick.bind(this)
   }
 
   clickHandler() {
@@ -42,8 +44,41 @@ class Pixel extends React.Component {
     })
   }
 
+  rightClick(evt) {
+    evt.preventDefault()
+    {
+      style: {//set state
+        backgroundColor: 'black',
+        height: '50px',
+        width: '50px'
+      }
+    })
+
+
+  }
+
+
+  onDoubleClick() {
+    this.setState({
+      style: {
+        backgroundColor: 'white',
+        height: '50px',
+        width: '50px'
+      }
+    })
+
+  }
+
   render() {
-    return <div style={this.state.style} onClick={this.clickHandler} onMouseOver={this.onMouseEnter}></div>
+    return (
+      <div
+        style={this.state.style}
+        onClick={this.clickHandler}
+        onMouseOver={this.onMouseEnter}
+        onContextMenu={this.rightClick}
+        onDoubleClick={this.onDoubleClick}
+      ></div>
+    )
   }
 }
 
