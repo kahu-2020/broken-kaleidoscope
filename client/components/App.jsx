@@ -1,8 +1,11 @@
 import React from 'react'
 
+import Clump from './Clump'
+
+
 const App = () => {
   return (
-    <div>React development has begun!</div>
+    <Clump />
   )
 }
 
