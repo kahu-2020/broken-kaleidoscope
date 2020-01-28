@@ -6,13 +6,13 @@ const App = () => {
   // let t = (<Pixel />)
 
   // return Array.from({ length: 100 }, () => t);
+
   // these two functions perform the same action
+
+  // return new Array(5000).fill(t)
+
   return new Array(5000).fill(<Pixel />)
 }
-
-
-
-
 
 // let manyPixels = []
 
