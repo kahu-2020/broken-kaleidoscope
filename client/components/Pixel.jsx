@@ -9,8 +9,8 @@ class Pixel extends React.Component {
 
     this.state = {
       style: {
-        height: '150px',
-        width:'150px',
+        height: '20px',
+        width:'20px',
         backgroundColor: 'blue',
       }
     }
@@ -22,8 +22,8 @@ class Pixel extends React.Component {
 
       this.setState({
         style: {
-          height: '150px',
-          width: '150px',
+          height: '20px',
+          width: '20px',
           backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
         }
       })
@@ -33,8 +33,8 @@ class Pixel extends React.Component {
     clickHandler = evt => {
       this.setState({
           style: {
-              height: '150px',
-              width: '150px',
+              height: '20px',
+              width: '20px',
               backgroundColor: '#000'
           }
       })
@@ -48,6 +48,9 @@ class Pixel extends React.Component {
         </div>
     )}
 
+
   }
+
+  
 
   export default Pixel

@@ -1,76 +1,16 @@
 import React from 'react'
 import Pixel from './Pixel'
 
-const App = () => {
-  return (
- <div>
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-  <Pixel />
-</div>
-  )}
+
+
+ const App = () => {
+  return new Array(5000).fill(<Pixel />)
+}
+ 
+  
+
+
+
+
 
 export default App
