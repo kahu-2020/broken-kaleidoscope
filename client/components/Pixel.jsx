@@ -13,23 +13,33 @@ class Pixel extends React.Component {
 
     this.state = {
       style: {
-        height: '50px',
-        width: '50px',
+        height: '10px',
+        width: '10px',
         backgroundColor: randomHexColor()
       }
     }
+    
+    // function changeColor () {
+      setInterval(this.setNewColor, 200)
+    // }
+    // changeColor()
+
+  
+
     this.clickHandler = this.clickHandler.bind(this)
     this.onMouseEnter = this.onMouseEnter.bind(this)
     this.rightClick = this.rightClick.bind(this)
     this.onDoubleClick = this.onDoubleClick.bind(this)
+    this.dragEnter = this.dragEnter.bind(this)
+    this.setNewColor = this.setNewColor.bind(this)
   }
 
   clickHandler() {
     this.setState({
       style: {
         backgroundColor: randomHexColor(),
-        height: '50px',
-        width: '50px'
+        height: '10px',
+        width: '10px'
       }
     })
   }
@@ -37,37 +47,50 @@ class Pixel extends React.Component {
   onMouseEnter() {
     this.setState({
       style: {
-        backgroundColor: "green",
-        height: '50px',
-        width: '50px'
+        backgroundColor: 'green',
+        height: '10px',
+        width: '10px'
       }
     })
   }
 
   rightClick(evt) {
     evt.preventDefault()
-    {
-      style: {//set state
+
+    this.setState({
+      style: {
         backgroundColor: 'black',
-        height: '50px',
-        width: '50px'
+        height: '10px',
+        width: '10px'
       }
     })
-
-
   }
-
 
   onDoubleClick() {
     this.setState({
       style: {
         backgroundColor: 'white',
-        height: '50px',
-        width: '50px'
+        height: '10px',
+        width: '10px'
       }
     })
-
   }
+
+  dragEnter() {
+    this.setState({
+      style: {
+        backgroundColor: 'yellow',
+        height: '10px',
+        width: '10px'
+      }
+    })
+  }
+
+ setNewColor () {
+   this.setState({
+     style:{...this.state.style, backgroundColor:randomHexColor() }
+   })
+ }
 
   render() {
     return (
@@ -77,6 +100,7 @@ class Pixel extends React.Component {
         onMouseOver={this.onMouseEnter}
         onContextMenu={this.rightClick}
         onDoubleClick={this.onDoubleClick}
+        onDragEnter={this.dragEnter}
       ></div>
     )
   }
