@@ -3,13 +3,13 @@ import React from 'react'
 class Pixel extends React.Component {
     constructor(props) {
         super(props)
-
+        
         this.state = {
             style: {
                 fontFamily: 'Helvetica',
                 backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`,
-                width: '100px',
-                height: '100px',
+                width: '3px',
+                height: '3px',
             }
         }
         this.handleClick = this.handleClick.bind(this)
@@ -25,8 +25,8 @@ class Pixel extends React.Component {
         this.setState({
             style: {
                 backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`,
-                width: '100px',
-                height: '100px',
+                width: '3px',
+                height: '3px',
             }
         })
     }
@@ -37,8 +37,8 @@ class Pixel extends React.Component {
         this.setState({
             style: {
                 backgroundColor: 'green',
-                width: '100px',
-                height: '100px',
+                width: '3px',
+                height: '3px',
             }
         })
     }
@@ -50,8 +50,8 @@ class Pixel extends React.Component {
         this.setState( {
             style: {
                 backgroundColor: 'black',
-                width: '100px',
-                height: '100px',
+                width: '3px',
+                height: '3px',
             }
         })
     }
@@ -62,8 +62,8 @@ class Pixel extends React.Component {
         this.setState({
             style: {
                 backgroundColor: 'white',
-                width: '100px',
-                height: '100px',
+                width: '3px',
+                height: '3px',
             }
         })
     }
@@ -75,8 +75,8 @@ class Pixel extends React.Component {
         this.setState({
             style: {
                 backgroundColor: 'yellow',
-                width: '100px',
-                height: '100px',
+                width: '3px',
+                height: '3px',
             }
         })
     }
