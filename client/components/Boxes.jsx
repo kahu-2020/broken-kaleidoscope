@@ -1,9 +1,6 @@
 import React from 'react'
 
-
-
-
-class Clump extends React.Component {
+class Boxes extends React.Component {
     constructor(props) {
         super(props)
 
@@ -13,6 +10,9 @@ class Clump extends React.Component {
                 width: '150px',
                 backgroundColor: '#12CBC4',
                 border: '1px solid #000'
+            },
+            user: {
+                name: 'you'
             }
         }
 
@@ -37,6 +37,7 @@ class Clump extends React.Component {
         })
     }
 
+
     clickHandler = evt => {
         this.setState({
             style: {
@@ -46,6 +47,7 @@ class Clump extends React.Component {
             }
         })
     }
+
 
     playerOneTurn() {
         this.setState({
@@ -75,7 +77,9 @@ class Clump extends React.Component {
 
     render() {
         return (
-            <div style={this.state.style} onClick={this.playerOneTurn} onContextMenu={this.playerTwoTurn}>
+            <div>
+            <p>Hello {this.state.user.name}</p>
+           
 
             </div>
         )
@@ -89,4 +93,4 @@ class Clump extends React.Component {
 
 
 
-export default Clump
+export default Boxes
